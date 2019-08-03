@@ -1,14 +1,21 @@
 <% include partials/header %>
-<h1>This is the landing page</h1>
 
-<a href="/campgrounds/new">Add new campground</a>
-<% campgrounds.forEach(function(campground){ %>
-    <div>
-        <h1><%= campground.name %></h1>
-        <img src="<%=campground.image%>">
-    </div>
-
-<% }); %>
-
-
+<div class="container">
+<div class="jumbotron">
+    <h1>Welcome to YelpCamp</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <a href="/campgrounds/new" class="btn btn-primary btn-lg" role="button">Add new campground</a>
+</div>
+<div class="row">
+        <% campgrounds.forEach(function(campground){ %>
+        <div class="col-xl-3 col-md-3 col-sm-6">
+            <div class="card">
+                <img src="<%=campground.image%>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= campground.name %></h5>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+</div>
 <% include partials/footer %>

@@ -5,6 +5,15 @@ app.set("view engine","ejs");
 var campgrounds = [
         {name : "Gaurav Sharma", image : "https://images.freeimages.com/images/large-previews/751/orange-splash-1326817.jpg" },
         {name : "Upanshu Kumar", image : "https://images.freeimages.com/images/large-previews/7e9/ladybird-1367182.jpg" },
+        {name : "Manish Shah", image : "https://images.freeimages.com/images/large-previews/fa7/kiraz-polis-1640374.jpg" },
+        {name : "Gaurav Sharma", image : "https://images.freeimages.com/images/large-previews/751/orange-splash-1326817.jpg" },
+        {name : "Upanshu Kumar", image : "https://images.freeimages.com/images/large-previews/7e9/ladybird-1367182.jpg" },
+        {name : "Manish Shah", image : "https://images.freeimages.com/images/large-previews/fa7/kiraz-polis-1640374.jpg" },
+        {name : "Gaurav Sharma", image : "https://images.freeimages.com/images/large-previews/751/orange-splash-1326817.jpg" },
+        {name : "Upanshu Kumar", image : "https://images.freeimages.com/images/large-previews/7e9/ladybird-1367182.jpg" },
+        {name : "Manish Shah", image : "https://images.freeimages.com/images/large-previews/fa7/kiraz-polis-1640374.jpg" },
+        {name : "Gaurav Sharma", image : "https://images.freeimages.com/images/large-previews/751/orange-splash-1326817.jpg" },
+        {name : "Upanshu Kumar", image : "https://images.freeimages.com/images/large-previews/7e9/ladybird-1367182.jpg" },
         {name : "Manish Shah", image : "https://images.freeimages.com/images/large-previews/fa7/kiraz-polis-1640374.jpg" }
 ];
 
