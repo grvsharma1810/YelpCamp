@@ -1,0 +1,13 @@
+ .card img{
+     width : 100%;
+ }
+
+ #commentCard{
+     margin-top : 20px;
+     margin-bottom: 15px;
+     background-color: #dce3de;
+ }
+
+ #mainRow{
+     margin-top : 20px;
+ }

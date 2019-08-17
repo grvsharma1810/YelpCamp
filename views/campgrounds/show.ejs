@@ -1,0 +1,43 @@
+<%include ../partials/header%>
+
+<div class="container">
+    <div id="mainRow" class="row">
+        <div class="col-md-3">
+            <p class="lead">YelpCamp</p>
+            <ul class="list-group">
+                <li class="list-group-item active">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="card">
+                <img src="<%=campground.image%>">
+                <div class="card-body">
+                    <h4 class="float-right font-weight-bold">$9.00/night</h4>
+                    <h3 class="card-title font-weight-bold"><a href="#"><%=campground.name%></a></h3>                    
+                    <p class="card-text" ><%=campground.description%></p>                    
+                </div>
+            </div>
+            <div id="commentCard" class="card text-dark">
+                <div class="card-header">
+                    <a class="btn btn-success card-link float-right" href="/campgrounds/<%=campground._id%>/comments/new">Leave a review</a>
+                </div>
+                <div class="card-body">
+                    <%campground.comments.forEach(function(comment){%>
+                        <div class="row">
+                            <div class="col-md-12">                            
+                                <span class="float-right">10 days ago</span>
+                                <strong><%=comment.author%></strong>
+                                <p><%=comment.text%></p>                            
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%include ../partials/footer%>
