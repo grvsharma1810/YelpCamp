@@ -122,6 +122,6 @@ app.post("/register",function(req,res){
     });
 });
 
-app.listen(process.env.PORT,process.env.IN,function(){
+app.listen(3000,function(){
     console.log("Server Started");
 })
